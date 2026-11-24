@@ -33,6 +33,9 @@ def validate(entry: str) -> str:
     # Exactly one sentence-ending full stop, at the end of the line.
     if text.count(".") != 1 or not text.endswith("."):
         raise ValueError("entry must be exactly one sentence")
+    # No double spaces: a stray extra space would read as a typo.
+    if "  " in text:
+        raise ValueError("entry must not contain double spaces")
     return text
 
 
