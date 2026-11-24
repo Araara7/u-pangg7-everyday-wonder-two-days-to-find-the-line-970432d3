@@ -2,6 +2,10 @@
 
 Writes one sentence (110 chars) about a small moment of wonder in
 everyday life to /output/entry.txt.
+
+The moment: my shadow arrives at the crosswalk half a step before I do —
+an ordinary shadow, suddenly in a hurry to cross a street I have not
+chosen yet. The surprise is in the reversal: the shadow leads, I follow.
 """
 
 ENTRY = (
